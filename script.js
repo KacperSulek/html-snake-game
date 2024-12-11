@@ -80,19 +80,19 @@ function update() {
 }
 
 function changeDirection(e) {
-    if (e.code == "KeyW" && speedY != 1) { 
+    if (e.code == "ArrowUp" && speedY != 1) { 
         speedX = 0;
         speedY = -1;
     }
-    else if (e.code == "KeyS" && speedY != -1) {
+    else if (e.code == "ArrowDown" && speedY != -1) {
         speedX = 0;
         speedY = 1;
     }
-    else if (e.code == "KeyA" && speedX != 1) {
+    else if (e.code == "ArrowLeft" && speedX != 1) {
         speedX = -1;
         speedY = 0;
     }
-    else if (e.code == "KeyD" && speedX != -1) { 
+    else if (e.code == "ArrowRight" && speedX != -1) { 
         speedX = 1;
         speedY = 0;
     }
